@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider } from "styled-components";
+import { ContainerStyled } from "./styled/Container.styled";
+import { Button } from "react-bootstrap";
+import StyledHeader from "./components/Header/StyledHeader";
+import { theme } from "./styled/Global.styled";
+import GlobalStyles from "./styled/GlobalStyles";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <>
+      <GlobalStyles/>
+        <StyledHeader />
+
+        <ContainerStyled>
+          <h1>hh</h1>
+          <Button variant="success">Success</Button>{" "}
+        </ContainerStyled>
+      </>
+    </ThemeProvider>
   );
 }
 

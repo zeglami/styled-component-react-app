@@ -1,3 +1,50 @@
+
+# ----------------------------------------------------------------
+*useful plugins
+
+### ES7 React/Redux/GraphQL/React-Native snippets
+### React Native Tools
+### VSCode React Refactor
+ 
+### Eslint
+### Prettier
+### Code Spell Checker
+ 
+### GitLens
+https://www.youtube.com/watch?v=UQPb73Zz9qk
+
+### Highlight Matching Tag
+### Auto Rename Tag 
+### Bracket Pair Colorizer 2
+### Color Highlight
+### vscode-styled-components
+
+ 
+### VSCodoe theme:
+### Community Material Theme
+### Material Theme Icons
+### Settings & Font
+# ----------------------------------------------------------------
+
+*Grid System
+https://react-bootstrap.netlify.app/layout/grid/#rb-docs-content
+
+
+# ----------------------------------------------------------------
+emmet is enabled by default in in html files
+for javascript:
+go to settings >serach for emmet>add javascript in inclued language 
+
+
+
+
+
+
+
+
+# ----------------------------------------------------------------
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
