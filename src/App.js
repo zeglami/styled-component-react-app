@@ -1,24 +1,35 @@
-import { ThemeProvider } from "styled-components";
-import { ContainerStyled } from "./styled/Container.styled";
-import { Button } from "react-bootstrap";
-import StyledHeader from "./components/Header/StyledHeader";
-import { theme } from "./styled/Global.styled";
-import GlobalStyles from "./styled/GlobalStyles";
+import { ThemeProvider } from 'styled-components'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Card from './components/Card'
+import { Container } from './components/styles/Container.styled'
+import GlobalStyles from './components/styles/Global'
+import content from './content'
+
+const theme = {
+  colors: {
+    header: '#ebfbff',
+    body: '#fff',
+    footer: '#003333',
+  },
+  mobile: '768px',
+}
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <>
-      <GlobalStyles/>
-        <StyledHeader />
-
-        <ContainerStyled>
-          <h1>hh</h1>
-          <Button variant="success">Success</Button>{" "}
-        </ContainerStyled>
+        <GlobalStyles />
+        <Header />
+        <Container>
+          {content.map((item, index) => (
+            <Card key={index} item={item} />
+          ))}
+        </Container>
+        <Footer />
       </>
     </ThemeProvider>
-  );
+  )
 }
 
-export default App;
+export default App
